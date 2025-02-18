@@ -24,86 +24,104 @@
     <title>Document</title>
   </head>
   <body>
-    <div id="nav-bar">
-      <h1>S</h1>
-      <nav>
-        <ul>
-          <li>
-            <a>
-              <i class="fa-solid fa-wave-square"></i>
-              <p class="sidebar-items">Dashboard</p>
-            </a>
-          </li>
-          <li>
-            <a>
-              <i class="fa-regular fa-folder"></i>
-              <p class="sidebar-items">Folders</p>
-            </a>
-          </li>
-          <li>
-            <a>
-              <i class="fa-regular fa-clone"></i>
-              <p class="sidebar-items">Projects</p>
-            </a>
-          </li>
-          <li>
-            <a>
-              <i class="fa-regular fa-calendar-check"></i>
-              <p class="sidebar-items">Tasks</p>
-            </a>
-          </li>
-          <li>
-            <a>
-              <i class="fa-solid fa-gear"></i>
-              <p class="sidebar-items">Settings</p>
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <div id="account-details">
-        <img
-          src="https://media.istockphoto.com/id/1430584618/photo/fashion-influencer-and-black-woman-sunglasses-portrait-with-natural-afro-on-blue-studio-wall.jpg?s=612x612&w=0&k=20&c=08xM-aOCeEE0qwBVAf-vL61wOUqFSJ40ydrj3ZE-Fjc="
-          alt="girl-in-glasses"
-        />
-        <p>Devin Lee</p>
-        <i class="fa-solid fa-chevron-right"></i>
-      </div>
-    </div>
-    <div id="main">
-      <div id="header">ALP ALP ALP Alp</div>
-      <div id="content">
-        <div>
-          <div id="recent-folders"></div>
-          <div id="projects"></div>
+    <div id="main-container">
+      <div id="nav-bar">
+        <h1>S</h1>
+        <nav>
+          <ul>
+            <li>
+              <a>
+                <i class="fa-solid fa-wave-square"></i>
+                <p class="sidebar-items">Dashboard</p>
+              </a>
+            </li>
+            <li>
+              <a>
+                <i class="fa-regular fa-folder"></i>
+                <p class="sidebar-items">Folders</p>
+              </a>
+            </li>
+            <li>
+              <a>
+                <i class="fa-regular fa-clone"></i>
+                <p class="sidebar-items">Projects</p>
+              </a>
+            </li>
+            <li>
+              <a>
+                <i class="fa-regular fa-calendar-check"></i>
+                <p class="sidebar-items">Tasks</p>
+              </a>
+            </li>
+            <li>
+              <a>
+                <i class="fa-solid fa-gear"></i>
+                <p class="sidebar-items">Settings</p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div id="account-details">
+          <img
+            src="https://media.istockphoto.com/id/1430584618/photo/fashion-influencer-and-black-woman-sunglasses-portrait-with-natural-afro-on-blue-studio-wall.jpg?s=612x612&w=0&k=20&c=08xM-aOCeEE0qwBVAf-vL61wOUqFSJ40ydrj3ZE-Fjc="
+            alt="girl-in-glasses"
+            class="avatar"
+          />
+          <p>Devin Lee</p>
+          <i class="fa-solid fa-chevron-right"></i>
         </div>
-        <div id="tasks">
-          <h3>YOUR TASKS</h3>
-          <div id="task-cards">
-            <div class="one-task-card">
-              <i class="fa-regular fa-circle"></i>
-              <p>Better quality favicon</p>
-              <p class="keyword-design">Design</p>
+      </div>
+      <div id="main">
+        <div id="header">
+          <div id="search-container">
+            <div id="search-bar">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" placeholder="Search" />
             </div>
-            <div class="one-task-card">
-              <i class="fa-regular fa-circle"></i>
-              <p>Social accounts setup</p>
-              <p class="keyword-marketing">Marketing</p>
-              <i class="fa-regular fa-clock"></i>
-              <p>12:30</p>
+          </div>
+          <div id="notification">
+            <i class="fa-regular fa-envelope"></i>
+            <i class="fa-regular fa-bell"></i>
+            <div class="date-time">
+              <span>17:30</span>
+              <span>18 August</span>
             </div>
-            <div class="one-task-card">
-              <i class="fa-solid fa-circle-check"></i>
-              <p>Upgrade plan page</p>
-              <p class="keyword-development">Development</p>
-              <i class="fa-regular fa-clock"></i>
-              <p>14:30</p>
-            </div>
-            <div class="one-task-card">
-              <i class="fa-solid fa-circle-check"></i>
-              <p>Email templates</p>
-              <p class="keyword-design">Design</p>
-              <i class="fa-solid fa-paperclip"></i>
-              <p>6</p>
+          </div>
+        </div>
+        <div id="content">
+          <div>
+            <div id="recent-folders"></div>
+            <div id="projects"></div>
+          </div>
+          <div id="tasks">
+            <h3>YOUR TASKS</h3>
+            <div id="task-cards">
+              <div class="one-task-card">
+                <i class="fa-regular fa-circle"></i>
+                <p>Better quality favicon</p>
+                <p class="keyword-design">Design</p>
+              </div>
+              <div class="one-task-card">
+                <i class="fa-regular fa-circle"></i>
+                <p>Social accounts setup</p>
+                <p class="keyword-marketing">Marketing</p>
+                <i class="fa-regular fa-clock"></i>
+                <p>12:30</p>
+              </div>
+              <div class="one-task-card">
+                <i class="fa-solid fa-circle-check"></i>
+                <p>Upgrade plan page</p>
+                <p class="keyword-development">Development</p>
+                <i class="fa-regular fa-clock"></i>
+                <p>14:30</p>
+              </div>
+              <div class="one-task-card">
+                <i class="fa-solid fa-circle-check"></i>
+                <p>Email templates</p>
+                <p class="keyword-design">Design</p>
+                <i class="fa-solid fa-paperclip"></i>
+                <p>6</p>
+              </div>
             </div>
           </div>
         </div>
