@@ -10,6 +10,10 @@ ul {
   list-style-type: none;
 }
 
+#nav-bar {
+  width: 300px;
+}
+
 nav ul li a {
   display: flex;
   flex-direction: row;
@@ -24,4 +28,147 @@ nav ul li a:hover {
 
 .sidebar-items {
   margin-left: 10px;
+}
+
+#profile-pic {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  margin-left: 20px;
+}
+
+#account-name {
+  margin-left: 10px;
+}
+
+#more-btn {
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 10px;
+}
+
+#more-btn:hover {
+  background-color: #f4f9fe;
+  border-radius: 25px;
+}
+
+#account-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.one-task-card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 300px;
+  border-radius: 15px;
+  margin: 10px;
+}
+
+#first-task-card {
+  background-color: white;
+}
+
+#second-task-card {
+  background-color: white;
+}
+
+#third-task-card {
+  background-color: #f8fcff;
+}
+
+#fourth-task-card {
+  background-color: #f8fcff;
+}
+
+.task-name {
+  font-size: 15px;
+  margin-right: 90px;
+}
+
+.keyword-design {
+  color: white;
+  background-color: #ff605b;
+  padding: 5px;
+  border-radius: 25px;
+  font-size: 11px;
+  margin-left: 25px;
+}
+
+.keyword-marketing {
+  color: white;
+  background-color: #8ec535;
+  padding: 5px;
+  border-radius: 25px;
+  font-size: 11px;
+  margin-left: 25px;
+}
+
+.keyword-development {
+  color: white;
+  background-color: #985df1;
+  padding: 5px;
+  border-radius: 25px;
+  font-size: 11px;
+  margin-left: 25px;
+}
+
+#circle-icon {
+  margin: 5px;
+}
+
+#circle {
+  margin: 5px;
+}
+
+#circle-check {
+  margin: 5px;
+}
+
+#circle-check-icon {
+  margin: 5px;
+}
+
+.additional-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 130px;
+}
+
+#additional-info-two {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 110px;
+}
+
+#attachment-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 175px;
+}
+
+#clock-icon {
+  margin-right: 10px;
+}
+
+#clock-icon-two {
+  margin-right: 10px;
+}
+
+#attach-icon {
+  margin-right: 10px;
+}
+
+#task-cards {
+  background-color: #f4f9fc;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 20px;
+  width: 320px;
 }
