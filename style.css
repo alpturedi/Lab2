@@ -32,7 +32,6 @@ nav ul li a:hover {
   border-radius: 25px;
 }
 
-
 #main-container {
   width: 90vw;
   min-height: 90vh;
@@ -43,8 +42,8 @@ nav ul li a:hover {
   flex-direction: row;
   flex-shrink: 0;
   border-radius: 15px;
-  background: #FFF;
-  box-shadow: 0px 27px 78px -48px #709EFD;
+  background: #fff;
+  box-shadow: 0px 27px 78px -48px #709efd;
 }
 
 #nav-bar {
@@ -81,10 +80,10 @@ nav ul li a:hover {
   padding-right: 15px;
   width: 75%;
   height: 48px;
-  border: 1px solid #EEE;
+  border: 1px solid #eee;
   border-radius: 15px;
-  background: #FFF;
-  box-shadow: 0px 27px 78px -48px #709EFD;
+  background: #fff;
+  box-shadow: 0px 27px 78px -48px #709efd;
 }
 
 .search-icon-container {
@@ -97,8 +96,6 @@ nav ul li a:hover {
   left: 15px;
   font-size: 26px;
 }
-
-
 
 #notification {
   flex-basis: 50%;
@@ -115,12 +112,9 @@ nav ul li a:hover {
   flex-direction: column;
 }
 
-
 #nav-bar {
   width: 300px;
 }
-
-
 
 .sidebar-items {
   margin-left: 10px;
@@ -195,6 +189,15 @@ nav ul li a:hover {
   margin-left: 25px;
 }
 
+#kw-design {
+  color: white;
+  background-color: #ff605b;
+  padding: 5px;
+  border-radius: 25px;
+  font-size: 11px;
+  margin-left: 32px;
+}
+
 .keyword-marketing {
   color: white;
   background-color: #8ec535;
@@ -223,10 +226,12 @@ nav ul li a:hover {
 
 #circle-check {
   margin: 5px;
+  color: #4967de;
 }
 
 #circle-check-icon {
   margin: 5px;
+  color: #4967de;
 }
 
 .additional-info {
@@ -298,7 +303,7 @@ nav ul li a:hover {
   height: 150px;
   width: 150px;
   border-radius: 10px;
-  background: #F4F9FF;
+  background: #f4f9ff;
 }
 
 #projects {
@@ -316,31 +321,30 @@ nav ul li a:hover {
   width: 240px;
   height: 120px;
   border-radius: 10px;
-  background: #F4F9FF;
+  background: #f4f9ff;
   display: flex;
   flex-direction: column;
   padding: 20px;
 }
 
-.project>.name {
+.project > .name {
   display: flex;
   flex-direction: row;
   align-items: center;
   flex-basis: 50%;
   gap: 20px;
-
 }
 
-.project>.name>.badge {
+.project > .name > .badge {
   height: 45px;
   width: 45px;
   border-radius: 22.5px;
-  background: #FFF;
+  background: #fff;
   text-align: center;
   align-content: center;
 }
 
-.project>.progress {
+.project > .progress {
   flex-basis: 50%;
   margin-left: 55px;
 }
@@ -378,11 +382,11 @@ nav ul li a:hover {
   align-items: center;
   gap: 10px;
   background-color: white;
-  border: 1px solid #EEE;
+  border: 1px solid #eee;
   color: #0a0e1c7c;
 }
 
-.folder>div {
+.folder > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -392,11 +396,11 @@ nav ul li a:hover {
 
 .folders .fa-folder {
   font-size: 75px;
-  color: #7da5ff
+  color: #7da5ff;
 }
 
 .folder span {
-  color: #0A0E1C;
+  color: #0a0e1c;
   text-align: center;
   font-size: 14px;
   font-style: normal;
