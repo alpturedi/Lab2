@@ -6,6 +6,33 @@ body {
   align-items: center;
 }
 
+h1 {
+  margin-left: 20px;
+}
+
+h3 {
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style-type: none;
+}
+
+nav ul li a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+nav ul li a:hover {
+  background-color: #f4f9fe;
+  padding-left: 5px;
+  border-radius: 25px;
+}
+
+
 #main-container {
   width: 90vw;
   height: 90vh;
@@ -82,29 +109,12 @@ body {
   flex-direction: column;
 }
 
-h1 {
-  margin-left: 20px;
-}
-
-ul {
-  list-style-type: none;
-}
 
 #nav-bar {
   width: 300px;
 }
 
-nav ul li a {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
 
-nav ul li a:hover {
-  background-color: #f4f9fe;
-  padding-left: 5px;
-  border-radius: 25px;
-}
 
 .sidebar-items {
   margin-left: 10px;
@@ -252,4 +262,116 @@ nav ul li a:hover {
   padding-bottom: 2px;
   border-radius: 20px;
   width: 320px;
+}
+
+#content {
+  display: flex;
+  flex-direction: row;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#content .left-pane {
+  flex-basis: 70%;
+  padding: 20px;
+}
+
+#content .right-pane {
+  flex-basis: 30%;
+  padding: 20px;
+}
+
+.folders {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.folder {
+  height: 150px;
+  width: 150px;
+  border-radius: 10px;
+  background: #F4F9FF;
+}
+
+#projects {
+  margin-top: 100px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.project {
+  width: 240px;
+  height: 120px;
+  border-radius: 10px;
+  background: #F4F9FF;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.project>.name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-basis: 50%;
+  gap: 20px;
+
+}
+
+.project>.name>.badge {
+  height: 45px;
+  width: 45px;
+  border-radius: 22.5px;
+  background: #FFF;
+  text-align: center;
+  align-content: center;
+}
+
+.project>.progress {
+  flex-basis: 50%;
+  margin-left: 55px;
+}
+
+.progress-bar {
+  height: 10px;
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: #6283f6;
+  border-radius: 5px;
+}
+
+.progress-bar-fill-1 {
+  width: 55.3%;
+}
+
+.progress-bar-fill-2 {
+  width: 33.3%;
+}
+
+.progress-bar-fill-3 {
+  width: 87.5%;
+}
+
+.add-new-project {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: white;
+  border: 1px solid #EEE;
+  color: #0a0e1c7c;
 }
