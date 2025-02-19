@@ -63,12 +63,12 @@
         </nav>
         <div id="account-details">
           <img
+            id="profile-pic"
             src="https://media.istockphoto.com/id/1430584618/photo/fashion-influencer-and-black-woman-sunglasses-portrait-with-natural-afro-on-blue-studio-wall.jpg?s=612x612&w=0&k=20&c=08xM-aOCeEE0qwBVAf-vL61wOUqFSJ40ydrj3ZE-Fjc="
             alt="girl-in-glasses"
-            class="avatar"
           />
-          <p>Devin Lee</p>
-          <i class="fa-solid fa-chevron-right"></i>
+          <p id="account-name">Devin Lee</p>
+          <i class="fa-solid fa-chevron-right" id="more-btn"></i>
         </div>
       </div>
       <div id="main">
@@ -96,31 +96,37 @@
           <div id="tasks">
             <h3>YOUR TASKS</h3>
             <div id="task-cards">
-              <div class="one-task-card">
-                <i class="fa-regular fa-circle"></i>
-                <p>Better quality favicon</p>
+              <div class="one-task-card" id="first-task-card">
+                <i class="fa-regular fa-circle" id="circle-icon"></i>
+                <p class="task-name">Better quality favicon</p>
                 <p class="keyword-design">Design</p>
               </div>
-              <div class="one-task-card">
-                <i class="fa-regular fa-circle"></i>
-                <p>Social accounts setup</p>
+              <div class="one-task-card" id="second-task-card">
+                <i class="fa-regular fa-circle" id="circle"></i>
+                <p class="task-name">Social accounts setup</p>
                 <p class="keyword-marketing">Marketing</p>
-                <i class="fa-regular fa-clock"></i>
-                <p>12:30</p>
+                <div class="additional-info">
+                  <i class="fa-regular fa-clock" id="clock-icon"></i>
+                  <p>12:30</p>
+                </div>
               </div>
-              <div class="one-task-card">
-                <i class="fa-solid fa-circle-check"></i>
-                <p>Upgrade plan page</p>
+              <div class="one-task-card" id="third-task-card">
+                <i class="fa-solid fa-circle-check" id="circle-check"></i>
+                <p class="task-name">Upgrade plan page</p>
                 <p class="keyword-development">Development</p>
-                <i class="fa-regular fa-clock"></i>
-                <p>14:30</p>
+                <div id="additional-info-two">
+                  <i class="fa-regular fa-clock" id="clock-icon-two"></i>
+                  <p>14:30</p>
+                </div>
               </div>
-              <div class="one-task-card">
-                <i class="fa-solid fa-circle-check"></i>
-                <p>Email templates</p>
+              <div class="one-task-card" id="fourth-task-card">
+                <i class="fa-solid fa-circle-check" id="circle-check-icon"></i>
+                <p class="task-name">Email templates</p>
                 <p class="keyword-design">Design</p>
-                <i class="fa-solid fa-paperclip"></i>
-                <p>6</p>
+                <div id="attachment-info">
+                  <i class="fa-solid fa-paperclip" id="attach-icon"></i>
+                  <p>2</p>
+                </div>
               </div>
             </div>
           </div>
