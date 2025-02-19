@@ -1,15 +1,29 @@
 body {
-  font-family: Poppins;
+  font-family: "Mulish", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-image: url("images/background.png");
+  align-items: center;
 }
 
 #main-container {
+  width: 90vw;
+  height: 90vh;
+
+  margin: auto;
+  margin-top: 50px;
   display: flex;
   flex-direction: row;
-
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: #FFF;
+  box-shadow: 0px 27px 78px -48px #709EFD;
 }
 
 #nav-bar {
   flex-basis: 20%;
+  display: flex;
+  flex-direction: column;
 }
 
 #main {
@@ -122,6 +136,7 @@ nav ul li a:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-top: auto;
 }
 
 .one-task-card {
