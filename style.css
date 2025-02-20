@@ -3,7 +3,19 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
   background-image: url("images/background.png");
-  align-items: center;
+  padding-top: 20px;
+}
+
+#main-container {
+  margin: auto;
+  width: max(1024px, 90%);
+  min-height: 90vh;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0px 27px 78px -48px #709efd;
 }
 
 h1 {
@@ -32,24 +44,11 @@ nav ul li a:hover {
   border-radius: 25px;
 }
 
-#main-container {
-  width: 90vw;
-  min-height: 90vh;
-
-  margin: auto;
-  margin-top: 50px;
-  display: flex;
-  flex-direction: row;
-  flex-shrink: 0;
-  border-radius: 15px;
-  background: #fff;
-  box-shadow: 0px 27px 78px -48px #709efd;
-}
-
 #nav-bar {
   flex-basis: 20%;
   display: flex;
   flex-direction: column;
+  border-right: 1px solid #eee;
 }
 
 #main {
@@ -70,7 +69,7 @@ nav ul li a:hover {
   height: 100%;
   display: flex;
   align-items: center;
-  padding: 0;
+  padding: 0 0 0 50px;
   margin: 0;
   color: #9194a1;
 }
@@ -84,6 +83,7 @@ nav ul li a:hover {
   border-radius: 15px;
   background: #fff;
   box-shadow: 0px 27px 78px -48px #709efd;
+  font-size: 16px;
 }
 
 .search-icon-container {
@@ -98,22 +98,32 @@ nav ul li a:hover {
 }
 
 #notification {
+  margin-top: 20px;
   flex-basis: 50%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
+}
+
+#notification .fa-regular {
+  font-size: 24px;
 }
 
 .date-time {
-  margin-right: 20px;
+  margin-right: 40px;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   flex-direction: column;
+  text-align: right;
 }
 
-#nav-bar {
-  width: 300px;
+.date-time .time {
+  font-size: 36px;
+}
+
+.date-time .date {
+  font-size: 14px;
 }
 
 .sidebar-items {
@@ -131,22 +141,34 @@ nav ul li a:hover {
   margin-left: 10px;
 }
 
-#more-btn {
-  margin-left: 50px;
-  margin-right: 50px;
-  padding: 10px;
+.more-btn {
+  margin-left: auto;
+  width: 28px;
+  height: 28px;
+  border-radius: 100%;
+  text-align: center;
+  background-color: #F1F5FA;
+  display: flex;
 }
 
-#more-btn:hover {
+.more-btn>i {
+  margin: auto;
+  color: #5D86F4;
+}
+
+.more-btn:hover {
   background-color: #f4f9fe;
   border-radius: 25px;
 }
 
 #account-details {
+  height: 95px;
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-top: auto;
+  border-top: 1px solid #eee;
+  padding-right: 20px;
 }
 
 .one-task-card {
@@ -292,20 +314,6 @@ nav ul li a:hover {
   padding: 20px;
 }
 
-.folders {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.folder {
-  height: 150px;
-  width: 150px;
-  border-radius: 10px;
-  background: #f4f9ff;
-}
-
 #projects {
   margin-top: 100px;
 }
@@ -318,7 +326,7 @@ nav ul li a:hover {
 }
 
 .project {
-  width: 240px;
+  width: clamp(200px, 40%, 300px);
   height: 120px;
   border-radius: 10px;
   background: #f4f9ff;
@@ -327,7 +335,7 @@ nav ul li a:hover {
   padding: 20px;
 }
 
-.project > .name {
+.project>.name {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -335,16 +343,31 @@ nav ul li a:hover {
   gap: 20px;
 }
 
-.project > .name > .badge {
+.project>.name>.badge {
   height: 45px;
   width: 45px;
   border-radius: 22.5px;
   background: #fff;
   text-align: center;
   align-content: center;
+  font-size: 20px;
+  font-weight: 900;
 }
 
-.project > .progress {
+.badge-1>span {
+  color: #985BFF;
+
+}
+
+.badge-2>span {
+  color: #FF5B5B;
+}
+
+.badge-3>span {
+  color: #90C335;
+}
+
+.project>.progress {
   flex-basis: 50%;
   margin-left: 55px;
 }
@@ -386,7 +409,22 @@ nav ul li a:hover {
   color: #0a0e1c7c;
 }
 
-.folder > div {
+.folders {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.folder {
+  height: 150px;
+  width: 150px;
+  border-radius: 10px;
+  background: #f4f9ff;
+  position: relative;
+}
+
+.folder .folder-name {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -406,4 +444,23 @@ nav ul li a:hover {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+
+.new-folder {
+  background-color: white;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  display: flex;
+  border-radius: 100%;
+}
+
+.new-folder>div {
+  margin: auto;
+  width: 10px;
+  height: 10px;
+  background-color: #FF4C9A;
+  border-radius: 100%;
 }
